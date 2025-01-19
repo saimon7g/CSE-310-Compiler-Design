@@ -1,0 +1,83 @@
+	ScopeTable# 1 created
+Cmd 1: I a a
+	Inserted in ScopeTable# 1 at position 1, 1
+Cmd 2: I f f
+	Inserted in ScopeTable# 1 at position 1, 2
+Cmd 3: I h h
+	Inserted in ScopeTable# 1 at position 1, 3
+Cmd 4: I k k
+	Inserted in ScopeTable# 1 at position 1, 4
+Cmd 5: I l l
+	Inserted in ScopeTable# 1 at position 1, 5
+Cmd 6: I g g
+	Inserted in ScopeTable# 1 at position 1, 6
+Cmd 7: I c c
+	Inserted in ScopeTable# 1 at position 1, 7
+Cmd 8: P C
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> 
+Cmd 9: I e e
+	Inserted in ScopeTable# 1 at position 1, 8
+Cmd 10: I b b
+	Inserted in ScopeTable# 1 at position 1, 9
+Cmd 11: I i i
+	Inserted in ScopeTable# 1 at position 1, 10
+Cmd 12: I f c
+	'f' already exists in the current ScopeTable
+Cmd 13: I d d
+	Inserted in ScopeTable# 1 at position 1, 11
+Cmd 14: I j j
+	Inserted in ScopeTable# 1 at position 1, 12
+Cmd 15: I o o
+	Inserted in ScopeTable# 1 at position 1, 13
+Cmd 16: I v v
+	Inserted in ScopeTable# 1 at position 1, 14
+Cmd 17: P A
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <o,o> <v,v> 
+Cmd 18: D v
+	Deleted 'v' from ScopeTable# 1 at position 1, 1
+Cmd 19: P A
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <o,o> 
+Cmd 20: I v v
+	Inserted in ScopeTable# 1 at position 1, 14
+Cmd 21: P A
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <o,o> <v,v> 
+Cmd 22: D o
+	Deleted 'o' from ScopeTable# 1 at position 1, 1
+Cmd 23: P A
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <v,v> 
+Cmd 24: I o o
+	Inserted in ScopeTable# 1 at position 1, 14
+Cmd 25: P A
+	ScopeTable# 1
+	1--> <a,a> <f,f> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <v,v> <o,o> 
+Cmd 26: D f
+	Deleted 'f' from ScopeTable# 1 at position 1, 1
+Cmd 27: I m m
+	Inserted in ScopeTable# 1 at position 1, 14
+Cmd 28: P A
+	ScopeTable# 1
+	1--> <a,a> <h,h> <k,k> <l,l> <g,g> <c,c> <e,e> <b,b> <i,i> <d,d> <j,j> <v,v> <o,o> <m,m> 
+Cmd 29: L o
+	'o' found in ScopeTable# 1 at position 1, 13
+Cmd 30: L k
+	'k' found in ScopeTable# 1 at position 1, 3
+Cmd 31: L n
+	'n' not found in any of the ScopeTables
+Cmd 32: L h
+	'h' found in ScopeTable# 1 at position 1, 2
+Cmd 33: S
+	ScopeTable# 2 created
+Cmd 34: S
+	ScopeTable# 3 created
+Cmd 35: S
+	ScopeTable# 4 created
+Cmd 36: Q
+	ScopeTable# 4 removed
+	ScopeTable# 3 removed
+	ScopeTable# 2 removed
+	ScopeTable# 1 removed

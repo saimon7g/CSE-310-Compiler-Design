@@ -1,0 +1,6 @@
+	ScopeTable# 
+	10--> <a,int> 
+	11--> <b,int> 
+	ScopeTable# 
+Total lines: 19
+Total errors: 1

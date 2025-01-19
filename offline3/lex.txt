@@ -1,0 +1,106 @@
+got		 int
+ 		got identifier            x
+get       comma
+ 		got identifier            y
+get       comma
+ 		got identifier            z
+get       semicolon     
+get		 float
+ 		got identifier            a
+get       semicolon     
+get       void   
+ 		got identifier            foo
+get       l parenthesis   
+get       r parenthesis   
+get       semicolon     
+got		 int
+ 		got identifier            var
+get       l parenthesis   
+got		 int
+ 		got identifier            a
+get       comma
+got		 int
+ 		got identifier            b
+get       r parenthesis   
+get       l curl 
+get       return   
+ 		got identifier            a
+get       ADDop 
+
+ 		got identifier            b
+get       semicolon     
+get       r curl  
+get       void   
+ 		got identifier            foo
+get       l parenthesis   
+get       r parenthesis   
+get       l curl 
+ 		got identifier            x
+get       assign op   
+get       Int const     2
+get       semicolon     
+ 		got identifier            y
+get       assign op   
+ 		got identifier            x
+get       ADDop 
+
+get       Int const     5
+get       semicolon     
+get       r curl  
+got		 int
+ 		got identifier            main
+get       l parenthesis   
+get       r parenthesis   
+get       l curl 
+got		 int
+ 		got identifier            a
+get       l square
+get       Int const     2
+get       r square
+get       comma
+ 		got identifier            c
+get       comma
+ 		got identifier            i
+get       comma
+ 		got identifier            j
+get       semicolon     
+get		 float
+ 		got identifier            d
+get       semicolon     
+ 		got identifier            a
+get       l square
+get       Int const     0
+get       r square
+get       semicolon     
+ 		got identifier            a
+get       l square
+get       Int const     1
+get       r square
+get       assign op   
+get       Int const     5
+get       semicolon     
+ 		got identifier            i
+get       assign op   
+ 		got identifier            a
+get       l square
+get       Int const     0
+get       r square
+get       ADDop 
+
+ 		got identifier            a
+get       l square
+get       Int const     1
+get       r square
+get       semicolon     
+ 		got identifier            j
+get       assign op   
+get       Int const     2
+get       mul op   
+get       Int const     3
+get       ADDop 
+
+get       l parenthesis   
+get       Int const     5
+get       mul op   
+get       Int const     3
+get       Int const     4

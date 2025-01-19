@@ -1,0 +1,175 @@
+		inside type_spec: INT       got<<<<<<INT 1		INT		type_specifier	: INT
+		inside      declist: ID    1		ID		declaration_list: ID
+		inside      declaarationlist: decl comma id    1		declaration_list COMMA ID		declaration_list : declaration_list COMMA ID
+		inside      declaarationlist: decl comma id    1		declaration_list COMMA ID		declaration_list : declaration_list COMMA ID
+		 inside      var_declaration : type_specifier declaration_list SEMICOLON      1		declaration_list COMMA ID		var_declaration : type_specifier declaration_list SEMICOLON
+		inside      		unit : var_declaration		1		var_declaration		unit : var_declaration
+		inside      			program : unit		1		unit		program :  unit
+		inside type_spec: fkoat          got<<<<<<<<<<<<float 1		FLOAT		type_specifier
+		inside      declist: ID    1		ID		declaration_list: ID
+		 inside      var_declaration : type_specifier declaration_list SEMICOLON      1		ID		var_declaration : type_specifier declaration_list SEMICOLON
+		inside      		unit : var_declaration		1		var_declaration		unit : var_declaration
+		inside      			program :   program unit		1		program unit		program : program unit
+		inside type_spec: void          got<<<<<<<<<void    3		VOID		type_specifier
+inside			func_declaration : type_specifier ID LPAREN RPAREN SEMICOLON 3		type_specifier ID LPAREN RPAREN SEMICOLON		func_declaration : type_specifier ID LPAREN RPAREN SEMICOLON
+		inside      		unit : 		func_declaration   3		func_declaration		unit : func_declaration
+		inside      			program :   program unit		3		program unit		program : program unit
+		inside type_spec: INT       got<<<<<<INT 5		INT		type_specifier	: INT
+		inside type_spec: INT       got<<<<<<INT 5		INT		type_specifier	: INT
+inside			parameter_list : type_specifier  ID   5		type_specifier ID		parameter_list
+		inside type_spec: INT       got<<<<<<INT 5		INT		type_specifier	: INT
+inside			parameter_list :parameter_list COMMA type_specifier  ID   5		parameter_list COMMA type_specifier ID		parameter_list : parameter_list COMMA type_specifier ID
+					into compound statemnent		
+inside			variable: ID   		6		a		variable
+inside			factor variable	6		variable		factor	: variable
+inside			unary_expression : factor	6		factor		unary_expression : factor
+inside			term :	unary_expression		6		unary_expression		term : unary_expression
+inside			simple_expression : term		6		term		simple_expression : term
+inside			variable: ID   		6		b		variable
+inside			factor variable	6		variable		factor	: variable
+inside			unary_expression : factor	6		factor		unary_expression : factor
+inside			term :	unary_expression		6		unary_expression		term : unary_expression
+inside			simple_expression : simple_expression ADDOP term		6		simple_expression ADDOP term		simple_expression : simple_expression ADDOP term
+inside			rel_expression : simple_expression		6		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		6		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		6		logic_expression		expression : logic_expression
+inside			statement: RETURN expression SEMICOLON    		6		RETURN expression SEMICOLON		statement : RETURN expression SEMICOLON
+		inside      statements : statement    6		statement		statements : statement
+inside			compound_statement : LCURL statements RCURL 7		LCURL		compound_statement : LCURL statements RCURL
+func_definition : type_specifier ID LPAREN parameter_list RPAREN { } compound_statement		7		var		func_definition : type_specifier ID LPAREN parameter_list RPAREN
+		inside      		unit : 		func_declaration   7		func_definition		unit : func_definition
+		inside      			program :   program unit		7		program unit		program : program unit
+		inside type_spec: void          got<<<<<<<<<void    9		VOID		type_specifier
+ function defined 
+					into compound statemnent		
+inside			variable: ID   		10		x		variable
+inside			factor: CONST_INT	10		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	10		factor		unary_expression : factor
+inside			term :	unary_expression		10		unary_expression		term : unary_expression
+inside			simple_expression : term		10		term		simple_expression : term
+inside			rel_expression : simple_expression		10		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		10		rel_expression		logic_expression : rel_expression
+inside			expression : variable ASSIGNOP logic_expression		10		variable ASSIGNOP logic_expression		expression : variable ASSIGNOP logic_expression
+inside			expression_statement : expression SEMICOLON   		10		expression SEMICOLON		expression_statement : expression SEMICOLON
+inside			statement: expression_statement  		10		expression_statement		statement : expression_statement
+		inside      statements : statement    10		statement		statements : statement
+inside			variable: ID   		11		y		variable
+inside			variable: ID   		11		x		variable
+inside			factor variable	11		variable		factor	: variable
+inside			unary_expression : factor	11		factor		unary_expression : factor
+inside			term :	unary_expression		11		unary_expression		term : unary_expression
+inside			simple_expression : term		11		term		simple_expression : term
+inside			factor: CONST_INT	11		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	11		factor		unary_expression : factor
+inside			term :	unary_expression		11		unary_expression		term : unary_expression
+inside			simple_expression : simple_expression ADDOP term		11		simple_expression ADDOP term		simple_expression : simple_expression ADDOP term
+inside			rel_expression : simple_expression		11		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		11		rel_expression		logic_expression : rel_expression
+inside			expression : variable ASSIGNOP logic_expression		11		variable ASSIGNOP logic_expression		expression : variable ASSIGNOP logic_expression
+inside			expression_statement : expression SEMICOLON   		11		expression SEMICOLON		expression_statement : expression SEMICOLON
+inside			statement: expression_statement  		11		expression_statement		statement : expression_statement
+		inside      statements : statements statement     11		statement		statements : statements statement
+inside			compound_statement : LCURL statements RCURL 12		LCURL		compound_statement : LCURL statements RCURL
+insidw		func_definition : type_specifier ID LPAREN RPAREN { } compound_statement	12		foo		func_definition : type_specifier ID LPAREN RPAREN
+		inside      		unit : 		func_declaration   12		func_definition		unit : func_definition
+		inside      			program :   program unit		12		program unit		program : program unit
+		inside type_spec: INT       got<<<<<<INT 14		INT		type_specifier	: INT
+					into compound statemnent		
+		inside type_spec: INT       got<<<<<<INT 15		INT		type_specifier	: INT
+		inside      declist: ID LTHIRD CONST_INT RTHIRD    15		ID LTHIRD CONST_INT RTHIRD		declaration_list: ID LTHIRD CONST_INT RTHIRD
+		inside      declaarationlist: decl comma id    15		declaration_list COMMA ID		declaration_list : declaration_list COMMA ID
+		inside      declaarationlist: decl comma id    15		declaration_list COMMA ID		declaration_list : declaration_list COMMA ID
+		inside      declaarationlist: decl comma id    15		declaration_list COMMA ID		declaration_list : declaration_list COMMA ID
+		 inside      var_declaration : type_specifier declaration_list SEMICOLON      15		declaration_list COMMA ID		var_declaration : type_specifier declaration_list SEMICOLON
+inside			statement: var_declaration  		15		var_declaration		statement : var_declaration
+		inside      statements : statement    15		statement		statements : statement
+		inside type_spec: fkoat          got<<<<<<<<<<<<float 15		FLOAT		type_specifier
+		inside      declist: ID    15		ID		declaration_list: ID
+		 inside      var_declaration : type_specifier declaration_list SEMICOLON      15		ID		var_declaration : type_specifier declaration_list SEMICOLON
+inside			statement: var_declaration  		15		var_declaration		statement : var_declaration
+		inside      statements : statements statement     15		statement		statements : statements statement
+inside			factor: CONST_INT	16		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	16		factor		unary_expression : factor
+inside			term :	unary_expression		16		unary_expression		term : unary_expression
+inside			simple_expression : term		16		term		simple_expression : term
+inside			rel_expression : simple_expression		16		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		16		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		16		logic_expression		expression : logic_expression
+inside			variable: ID LTHIRD expression RTHIRD  		16		a		variable
+inside			factor variable	16		variable		factor	: variable
+inside			unary_expression : factor	16		factor		unary_expression : factor
+inside			term :	unary_expression		16		unary_expression		term : unary_expression
+inside			simple_expression : term		16		term		simple_expression : term
+inside			rel_expression : simple_expression		16		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		16		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		16		logic_expression		expression : logic_expression
+inside			expression_statement : expression SEMICOLON   		16		expression SEMICOLON		expression_statement : expression SEMICOLON
+inside			statement: expression_statement  		16		expression_statement		statement : expression_statement
+		inside      statements : statements statement     16		statement		statements : statements statement
+inside			factor: CONST_INT	17		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	17		factor		unary_expression : factor
+inside			term :	unary_expression		17		unary_expression		term : unary_expression
+inside			simple_expression : term		17		term		simple_expression : term
+inside			rel_expression : simple_expression		17		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		17		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		17		logic_expression		expression : logic_expression
+inside			variable: ID LTHIRD expression RTHIRD  		17		a		variable
+inside			factor: CONST_INT	17		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	17		factor		unary_expression : factor
+inside			term :	unary_expression		17		unary_expression		term : unary_expression
+inside			simple_expression : term		17		term		simple_expression : term
+inside			rel_expression : simple_expression		17		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		17		rel_expression		logic_expression : rel_expression
+inside			expression : variable ASSIGNOP logic_expression		17		variable ASSIGNOP logic_expression		expression : variable ASSIGNOP logic_expression
+inside			expression_statement : expression SEMICOLON   		17		expression SEMICOLON		expression_statement : expression SEMICOLON
+inside			statement: expression_statement  		17		expression_statement		statement : expression_statement
+		inside      statements : statements statement     17		statement		statements : statements statement
+inside			variable: ID   		18		i		variable
+inside			factor: CONST_INT	18		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	18		factor		unary_expression : factor
+inside			term :	unary_expression		18		unary_expression		term : unary_expression
+inside			simple_expression : term		18		term		simple_expression : term
+inside			rel_expression : simple_expression		18		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		18		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		18		logic_expression		expression : logic_expression
+inside			variable: ID LTHIRD expression RTHIRD  		18		a		variable
+inside			factor variable	18		variable		factor	: variable
+inside			unary_expression : factor	18		factor		unary_expression : factor
+inside			term :	unary_expression		18		unary_expression		term : unary_expression
+inside			simple_expression : term		18		term		simple_expression : term
+inside			factor: CONST_INT	18		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	18		factor		unary_expression : factor
+inside			term :	unary_expression		18		unary_expression		term : unary_expression
+inside			simple_expression : term		18		term		simple_expression : term
+inside			rel_expression : simple_expression		18		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		18		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		18		logic_expression		expression : logic_expression
+inside			variable: ID LTHIRD expression RTHIRD  		18		a		variable
+inside			factor variable	18		variable		factor	: variable
+inside			unary_expression : factor	18		factor		unary_expression : factor
+inside			term :	unary_expression		18		unary_expression		term : unary_expression
+inside			simple_expression : simple_expression ADDOP term		18		simple_expression ADDOP term		simple_expression : simple_expression ADDOP term
+inside			rel_expression : simple_expression		18		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		18		rel_expression		logic_expression : rel_expression
+inside			expression : variable ASSIGNOP logic_expression		18		variable ASSIGNOP logic_expression		expression : variable ASSIGNOP logic_expression
+inside			expression_statement : expression SEMICOLON   		18		expression SEMICOLON		expression_statement : expression SEMICOLON
+inside			statement: expression_statement  		18		expression_statement		statement : expression_statement
+		inside      statements : statements statement     18		statement		statements : statements statement
+inside			variable: ID   		19		j		variable
+inside			factor: CONST_INT	19		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	19		factor		unary_expression : factor
+inside			term :	unary_expression		19		unary_expression		term : unary_expression
+inside			factor: CONST_INT	19		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	19		factor		unary_expression : factor
+inside			term :	term MULOP unary_expression		19		term MULOP unary_expression		term : term MULOP unary_expression
+inside			simple_expression : term		19		term		simple_expression : term
+inside			factor: CONST_INT	19		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	19		factor		unary_expression : factor
+inside			term :	unary_expression		19		unary_expression		term : unary_expression
+inside			factor: CONST_INT	19		CONST_INT		factor : CONST_INT
+inside			unary_expression : factor	19		factor		unary_expression : factor
+inside			term :	term MULOP unary_expression		19		term MULOP unary_expression		term : term MULOP unary_expression
+inside			simple_expression : term		19		term		simple_expression : term
+inside			rel_expression : simple_expression		19		simple_expression		rel_expression : simple_expression
+inside			logic_expression : rel_expression		19		rel_expression		logic_expression : rel_expression
+inside			expression : logic_expression		19		logic_expression		expression : logic_expression

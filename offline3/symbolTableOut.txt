@@ -1,0 +1,23 @@
+interted into symbolTable         x           int
+	Inserted in ScopeTable# 1 at position 11, 1
+interted into symbolTable         y           int
+	Inserted in ScopeTable# 1 at position 1, 1
+interted into symbolTable         z           int
+	Inserted in ScopeTable# 1 at position 2, 1
+interted into symbolTable         a           float
+	Inserted in ScopeTable# 1 at position 10, 1
+interted into symbolTable         foo            
+	Inserted in ScopeTable# 1 at position 6, 1
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh	type_specifier ID			int			a
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh      parameter_list COMMA type_specifier ID			int			b
+------------------------------------------------------
+just came into define function------------------------2222222222222222222222222222222222222222
+	'var' not found in any of the ScopeTables
+--------------------------------before  if    in define fun
+	Inserted in ScopeTable# 1 at position 6, 2
+a		int		Parameter
+b		int		Parameter
+	'a' found in ScopeTable# 1 at position 10, 1
+	'a' found in ScopeTable# 1 at position 10, 1
+	'b' not found in any of the ScopeTables
+	'b' not found in any of the ScopeTables
